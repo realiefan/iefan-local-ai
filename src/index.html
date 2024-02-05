@@ -1,24 +1,29 @@
-<link href="./llm_chat.css" rel="stylesheet" type="text/css"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./llm_chat.css" rel="stylesheet" type="text/css"/>
+    <!-- Other meta tags and links can go here -->
+</head>
+<body>
+    <div class="chatui">
+        <div class="chatui-select-wrapper">
+            <select id="chatui-select"></select>
+        </div>
+        <div class="chatui-chat" id="chatui-chat" height="100"></div>
+        <div class="chatui-inputarea">
+            <input id="chatui-input" type="text" class="chatui-input" placeholder="Enter your message...">
+            <button id="chatui-send-btn" class="chatui-send-btn"></button>
+            <button id="chatui-reset-btn" class="chatui-reset-btn"></button>
+        </div>
+    </div>
 
+    <div class="chatui-extra-control">
+        <label id="chatui-info-label"></label>
+    </div>
 
-<div class="chatui">
-   <div class="chatui-select-wrapper">
-    <select id="chatui-select">
-    </select>
-   </div>
-  <div class="chatui-chat" id="chatui-chat" height="100">
-  </div>
-
-  <div class="chatui-inputarea">
-    <input id="chatui-input" type="text" class="chatui-input"  placeholder="Enter your message...">
-    <button id="chatui-send-btn" class="chatui-send-btn"></button>
-    <button id="chatui-reset-btn" class="chatui-reset-btn"></button>
-  </div>
-</div>
-
-<div class="chatui-extra-control">
-  <label id="chatui-info-label"></label>
-</div>
-<!--- Place script after ui to make sure ui loads first -->
-<script type="module" src="./simple_chat.ts"></script>
+    <!-- Place script after ui to make sure ui loads first -->
+    <script type="module" src="./simple_chat.ts"></script>
+</body>
+</html>
