@@ -1,6 +1,6 @@
 body,
 html {
-    height: 100vh;
+    min-height: 100%;
     margin: 0;
     background-color: #1F2027;
 }
@@ -10,12 +10,12 @@ html {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* Center the children horizontally */
-    height: 95%;
-    /* Set the height to 100% of the viewport height */
+    height: 90vh;
+    /* Use viewport height for 90% of the screen */
     padding-top: 16px;
     background-color: #1F2027;
 }
+
 
 .chatui-select-wrapper {
     display: flex;
@@ -136,10 +136,7 @@ s .chatui-header {
 .chatui-inputarea {
     display: flex;
     flex-shrink: 0;
-    /* Don't let it shrink to zero height */
-
-    /* Align to the bottom of the flex container */
-    padding: 5px;
+    padding: 10px;
     border-top: 2px solid transparent;
     background-color: #1F2027;
     width: 90%;
