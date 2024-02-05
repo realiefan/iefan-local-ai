@@ -1,23 +1,19 @@
-body {
-    display: block;
-    margin: 0px;
+body,
+html {
+    height: 100%;
+    margin: 0;
     background-color: #1F2027;
-    
 }
 
 .chatui {
     display: flex;
-    position: relative;
-    flex-flow: column wrap;
+    flex-direction: column;
     justify-content: space-between;
-    width: 100%;
-    max-width: 100%;
-    height: 95dvh;
-    min-height: 100%;
-
+    align-items: center;
+    /* Center the children horizontally */
+    height: 95%;
+    /* Set the height to 100% of the viewport height */
     padding-top: 16px;
-    
-
     background-color: #1F2027;
 }
 
@@ -139,9 +135,14 @@ s .chatui-header {
 
 .chatui-inputarea {
     display: flex;
-    padding: 10px;
+    flex-shrink: 0;
+    /* Don't let it shrink to zero height */
+
+    /* Align to the bottom of the flex container */
+    padding: 5px;
     border-top: 2px solid transparent;
     background-color: #1F2027;
+    width: 90%;
 }
 
 .chatui-inputarea * {
