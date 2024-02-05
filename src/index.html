@@ -2,25 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./llm_chat.css" rel="stylesheet" type="text/css"/>
     <!-- Other meta tags and links can go here -->
 </head>
 <body>
     <div class="chatui">
         <div class="chatui-select-wrapper">
-            <select id="chatui-select"></select>
+            <select id="chatui-select" aria-label="Select chat option"></select>
         </div>
-        <div class="chatui-chat" id="chatui-chat" height="100"></div>
+        <div class="chatui-chat" id="chatui-chat" aria-live="polite" height="100"></div>
         <div class="chatui-inputarea">
-            <input id="chatui-input" type="text" class="chatui-input" placeholder="Enter your message...">
-            <button id="chatui-send-btn" class="chatui-send-btn"></button>
-            <button id="chatui-reset-btn" class="chatui-reset-btn"></button>
+            <input id="chatui-input" type="text" class="chatui-input" placeholder="Enter your message..." aria-label="Type your message">
+            <button id="chatui-send-btn" class="chatui-send-btn" aria-label="Send message"></button>
+            <button id="chatui-reset-btn" class="chatui-reset-btn" aria-label="Reset chat"></button>
         </div>
     </div>
 
     <div class="chatui-extra-control">
-        <label id="chatui-info-label"></label>
+        <label id="chatui-info-label" aria-live="polite"></label>
     </div>
 
     <!-- Place script after ui to make sure ui loads first -->
