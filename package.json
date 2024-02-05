@@ -8,6 +8,7 @@
         "build": "cp src/gh-config.js src/app-config.js && parcel build src/llm_chat.html --dist-dir lib --no-content-hash"
     },
     "devDependencies": {
+        "@parcel/transformer-html": "^2.11.0",
         "buffer": "^5.7.1",
         "parcel": "^2.8.3",
         "process": "^0.11.10",
