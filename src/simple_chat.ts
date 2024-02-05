@@ -8,7 +8,7 @@ function getElementAndCheck(id: string): HTMLElement {
   }
   return element;
 }
-
+ 
 class ChatUI {
   private uiChat: HTMLElement;
   private uiChatInput: HTMLInputElement;
